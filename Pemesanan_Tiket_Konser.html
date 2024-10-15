@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Tiket Konser</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pemesanan Tiket Konser</h1>
+        <form action="#" method="post">
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telepon">No. Telepon:</label>
+            <input type="tel" id="telepon" name="telepon" required>
+
+            <label for="tanggal">Tanggal Konser:</label>
+            <input type="date" id="tanggal" name="tanggal" required>
+
+            <label for="waktu">Waktu Konser:</label>
+            <input type="time" id="waktu" name="waktu" required>
+
+            <label for="jumlah_tiket">Jumlah Tiket:</label>
+            <input type="number" id="jumlah_tiket" name="jumlah_tiket" min="1" required>
+
+            <label for="kategori">Kategori Tiket:</label>
+            <select id="kategori" name="kategori" required>
+                <option value="">Pilih Kategori</option>
+                <option value="VIP">VIP</option>
+                <option value="Reguler">Reguler</option>
+                <option value="Ekonomis">Ekonomis</option>
+            </select>
+
+            <label for="pesan">Pesan Tambahan:</label>
+            <textarea id="pesan" name="pesan" rows="4"></textarea>
+
+            <label for="metode_pembayaran">Metode Pembayaran:</label>
+            <select id="metode_pembayaran" name="metode_pembayaran" required>
+                <option value="">Pilih Metode</option>
+                <option value="Transfer Bank">Transfer Bank</option>
+                <option value="Kartu Kredit">Kartu Kredit</option>
+                <option value="E-Wallet">E-Wallet</option>
+            </select>
+
+            <label for="setuju">Saya setuju dengan syarat dan ketentuan:</label>
+            <input type="checkbox" id="setuju" name="setuju" required>
+
+            <button type="submit">Pesan Tiket</button>
+        </form>
+    </div>
+</body>
+</html>
